@@ -15,5 +15,12 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.2.2",
+    "@mui/styled-engine": "^5.2.0",
+    "react-swipeable-views": "^0.14.0"
   }
 }

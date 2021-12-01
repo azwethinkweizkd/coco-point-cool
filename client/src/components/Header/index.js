@@ -1,10 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
-import Auth from "../../utils/auth";
+import companyLogo from "../../images/cocoPointCoolingBlack.jpg";
+import "./style.css";
 
 const Header = () => {
-  return <header></header>;
+  return (
+    <>
+      <img src={companyLogo} className="logo" alt="Coconut Point Cooling" />
+    </>
+  );
 };
 
 export default Header;
