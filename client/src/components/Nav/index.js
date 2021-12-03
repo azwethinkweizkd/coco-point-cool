@@ -8,7 +8,10 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Home from "../../pages/Home";
-import { shadows } from "@mui/system";
+import About from "../../pages/About";
+import Services from "../../pages/Services";
+import Testimonials from "../../pages/Testimonials";
+import Contact from "../../pages/Contact";
 import "./style.css";
 
 function TabPanel(props) {
@@ -65,11 +68,11 @@ export default function NavTabs() {
           style={{
             backgroundColor: "#FFFFFF",
             color: "#003366",
+            fontFamily: "JetBrains Mono",
           }}
           indicatorColor="primary"
           textColor="inherit"
           variant="fullWidth"
-          aria-label="full width tabs example"
         >
           <Tab className="navTabs" label="Home" {...a11yProps(0)} />
           <Tab className="navTabs" label="About" {...a11yProps(1)} />
@@ -87,16 +90,16 @@ export default function NavTabs() {
           <Home />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          About
+          <About />
         </TabPanel>
         <TabPanel value={value} index={2} dir={theme.direction}>
-          Services
+          <Services />
         </TabPanel>
         <TabPanel value={value} index={3} dir={theme.direction}>
-          Testimonials
+          <Testimonials />
         </TabPanel>
         <TabPanel value={value} index={4} dir={theme.direction}>
-          Contact
+          <Contact />
         </TabPanel>
       </SwipeableViews>
     </Box>

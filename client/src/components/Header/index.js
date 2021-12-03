@@ -9,12 +9,17 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import companyLogo from "../../images/cocoPointCoolingBlack.jpg";
 import "./style.css";
+import { Divider } from "@mui/material";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
+  hoo: {
     width: "100%",
     maxWidth: 360,
     backgroundColor: theme.palette.background.paper,
+    paddingRight: 12,
+  },
+  image: {
+    paddingLeft: 12,
   },
 }));
 
@@ -29,13 +34,27 @@ export default function Header() {
   return (
     <>
       <Grid container justifyContent="space-between">
-        <img src={companyLogo} className="logo" alt="Coconut Point Cooling" />
+        <img
+          src={companyLogo}
+          className={classes.image}
+          id="logo"
+          alt="Coconut Point Cooling"
+          sx={{ pl: 12 }}
+        />
 
-        <Grid item xs={12} sm={6} md={6} lg={3} className={classes.root}>
+        <Grid
+          item
+          xs={12}
+          sm={6}
+          md={6}
+          lg={3}
+          className={classes.hoo}
+          id="hoo"
+        >
           <Typography variant="h6" component="div" textAlign="center">
             Hours of Operation
           </Typography>
-
+          <Divider />
           <List container>
             <ListItem>
               <CenteredListItemText
