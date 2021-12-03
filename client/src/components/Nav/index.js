@@ -8,6 +8,7 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Home from "../../pages/Home";
+import { shadows } from "@mui/system";
 import "./style.css";
 
 function TabPanel(props) {
@@ -61,16 +62,20 @@ export default function NavTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          indicatorColor="secondary"
+          style={{
+            backgroundColor: "#FFFFFF",
+            color: "#003366",
+          }}
+          indicatorColor="primary"
           textColor="inherit"
           variant="fullWidth"
           aria-label="full width tabs example"
         >
-          <Tab label="Home" {...a11yProps(0)} />
-          <Tab label="About" {...a11yProps(1)} />
-          <Tab label="Services" {...a11yProps(2)} />
-          <Tab label="Testimonials" {...a11yProps(3)} />
-          <Tab label="Contact" {...a11yProps(4)} />
+          <Tab className="navTabs" label="Home" {...a11yProps(0)} />
+          <Tab className="navTabs" label="About" {...a11yProps(1)} />
+          <Tab className="navTabs" label="Services" {...a11yProps(2)} />
+          <Tab className="navTabs" label="Testimonials" {...a11yProps(3)} />
+          <Tab className="navTabs" label="Contact" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <SwipeableViews

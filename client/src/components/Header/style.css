@@ -2,3 +2,46 @@
   max-width: 20%;
   height: auto;
 }
+@media screen and (min-width: 320px) {
+  .logo {
+    max-width: 100%;
+    height: 33%;
+  }
+}
+@media screen and (min-width: 375px) {
+  .logo {
+    max-width: 100%;
+    height: 33%;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  .logo {
+    max-width: 100%;
+    height: 33%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    max-width: 41%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    max-width: 30%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .logo {
+    max-width: 22%;
+    height: auto;
+  }
+}
+@media screen and (min-width: 2560px) {
+  .logo {
+    max-width: 12%;
+    height: auto;
+  }
+}
