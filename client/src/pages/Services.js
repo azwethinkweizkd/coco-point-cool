@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Footer from "../components/Footer";
 
 export default function Services() {
   return (
@@ -13,6 +14,7 @@ export default function Services() {
           Southwest Florida. Full licensed and insured. Call or send and email
           to schedule your appointment today
         </Typography>
+        <Footer />
       </Box>
     </main>
   );

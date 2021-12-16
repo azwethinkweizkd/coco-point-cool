@@ -1,21 +1,24 @@
 import React from "react";
-import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Footer from "../components/Footer";
+import CocoPointCoolIcon from "../utils/logo";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSnowflake } from "@fortawesome/free-regular-svg-icons";
 
 export default function Home() {
   return (
-    <main>
-      <Box>
-        {" "}
-        <Typography variant="h2">
-          Air Conditioning Repair and Maintenance Profesionals
-        </Typography>
-        <Typography variant="p">
-          Proudly serving commercial and residential air conditioning needs of
-          Southwest Florida. Full licensed and insured. Call or send and email
-          to schedule your appointment today
-        </Typography>
+    <>
+      <Box
+        sx={{
+          margin: "auto",
+          textAlign: "center",
+          height: "50vh",
+          width: "auto",
+        }}
+      >
+        <CocoPointCoolIcon className="svg-container" />
       </Box>
-    </main>
+      <Footer />
+    </>
   );
 }

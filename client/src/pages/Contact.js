@@ -1,6 +1,7 @@
 import React from "react";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import Footer from "../components/Footer";
 
 export default function Contact() {
   return (
@@ -8,6 +9,7 @@ export default function Contact() {
       <Box>
         {" "}
         <Typography variant="h2">Contact</Typography>
+        <Footer />
       </Box>
     </main>
   );

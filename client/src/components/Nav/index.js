@@ -27,7 +27,7 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <Typography className="navTabs">{children}</Typography>
         </Box>
       )}
     </div>
@@ -60,25 +60,30 @@ export default function NavTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: "background.paper", width: "auto" }}>
+    <Box
+      sx={{
+        backgroundImage: "linear-gradient(60deg, #003366, #FFFFFF, #996666)",
+        width: "auto",
+        height: "100vh",
+      }}
+    >
       <AppBar position="static">
         <Tabs
           value={value}
           onChange={handleChange}
           style={{
             backgroundColor: "#FFFFFF",
-            color: "#003366",
-            fontFamily: "JetBrains Mono",
+            color: "black",
           }}
-          indicatorColor="primary"
+          indicatorColor="secondary"
           textColor="inherit"
           variant="fullWidth"
         >
-          <Tab className="navTabs" label="Home" {...a11yProps(0)} />
-          <Tab className="navTabs" label="About" {...a11yProps(1)} />
-          <Tab className="navTabs" label="Services" {...a11yProps(2)} />
-          <Tab className="navTabs" label="Testimonials" {...a11yProps(3)} />
-          <Tab className="navTabs" label="Contact" {...a11yProps(4)} />
+          <Tab label="Home" {...a11yProps(0)} />
+          <Tab label="About" {...a11yProps(1)} />
+          <Tab label="Services" {...a11yProps(2)} />
+          <Tab label="Testimonials" {...a11yProps(3)} />
+          <Tab label="Contact" {...a11yProps(4)} />
         </Tabs>
       </AppBar>
       <SwipeableViews
