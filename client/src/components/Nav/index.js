@@ -64,7 +64,7 @@ export default function NavTabs() {
       sx={{
         backgroundImage: "linear-gradient(60deg, #003366, #FFFFFF, #996666)",
         width: "auto",
-        height: "100vh",
+        minHeight: "100vh",
       }}
     >
       <AppBar position="static">

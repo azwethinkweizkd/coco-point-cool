@@ -1,3 +1,7 @@
+/* .viewContainer {
+  background-color: linear-gradient(60deg, #003366, #ffffff, #996666);
+} */
+
 .st0 {
   fill: #b07a4e;
   stroke: #b07a4e;
@@ -29,6 +33,13 @@
   100% {
     transform: rotate(-360deg);
   }
+}
+
+.famPhoto {
+  height: 448px;
+  border: 4px solid black;
+  border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+  flex-direction: row;
 }
 
 /* .snow {

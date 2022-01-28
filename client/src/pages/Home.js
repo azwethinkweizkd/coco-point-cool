@@ -12,11 +12,12 @@ export default function Home() {
         sx={{
           margin: "auto",
           textAlign: "center",
-          height: "50vh",
+          height: "75vh",
           width: "auto",
+          overflow: "hidden",
         }}
       >
-        <CocoPointCoolIcon className="svg-container" />
+        <CocoPointCoolIcon />
       </Box>
       <Footer />
     </>
